@@ -1,0 +1,122 @@
+/* --- Global Styles --- */
+body {
+   background-color: #F9F7F2; /* Une couleur crème très douce et luxe */
+   color: #2C2C2C;
+   font-family: 'PT Serif', serif; /* Plus élégant pour le texte de lecture */
+   font-size: 18px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+/* --- Typography --- */
+h1 {
+   color: #1A1A1A;
+   font-family: 'Playfair Display', serif; /* Police type magazine Vogue */
+   font-size: 40px;
+   margin-bottom: 10px;
+   letter-spacing: -1px;
+}
+
+h2 {
+   color: #A68966; /* Un doré mat élégant */
+   font-family: 'Montserrat', sans-serif; 
+   font-size: 18px;
+   font-weight: 700;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+p {
+   line-height: 1.8;
+   margin: 15px 0;
+   color: #4A4A4A;
+}
+
+a {
+   text-decoration: none;
+   transition: all 0.4s ease;
+}
+
+/* --- Container --- */
+.container {
+   width: 650px;
+   margin: 60px auto;
+}
+
+@media (max-width: 760px) {
+   .container { width: 90%; }
+}
+
+/* --- Cards Design --- */
+.card-white {
+   background-color: white;
+   padding: 50px;
+   /* Ombre très légère et diffuse pour un effet aérien */
+   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.03); 
+   border-radius: 2px; /* Bords droits pour le côté "Fashion" */
+   margin: 40px 0;
+   border: 1px solid #EAEAEA;
+   transition: transform 0.3s ease;
+}
+
+.card-white:hover {
+    transform: translateY(-5px); /* Petit effet de lévitation au survol */
+}
+
+/* Bordures colorées subtiles (Pastels Chic) */
+.card-white:nth-of-type(2) { border-left: 5px solid #D4AF37; } /* Gold */
+.card-white:nth-of-type(3) { border-left: 5px solid #2C3E50; } /* Navy Blue (Voile) */
+.card-white:nth-of-type(4) { border-left: 5px solid #000000; } /* Black (Cinema) */
+
+/* --- Profile Image --- */
+.img-circle {
+   display: block;
+   margin: 0 auto 30px auto;
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 1px solid #D4AF37; /* Cercle doré fin autour de la photo */
+   padding: 5px;
+}
+
+/* --- Fashion Button --- */
+.btn-pink {
+   background-color: #1A1A1A;
+   color: #FFFFFF;
+   padding: 18px 40px;
+   display: inline-block;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 12px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   margin-top: 25px;
+   border: 1px solid #1A1A1A;
+}
+
+.btn-pink:hover {
+   background-color: transparent;
+   color: #1A1A1A;
+   border: 1px solid #1A1A1A;
+}
+
+/* --- Social Icons --- */
+.list-inline {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.list-inline i {
+   font-size: 28px;
+   color: #A68966;
+}
+
+.list-inline i:hover {
+   color: #1A1A1A;
+   transform: scale(1.2);
+}
